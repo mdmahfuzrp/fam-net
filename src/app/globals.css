@@ -1,26 +1,60 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Playwrite+CO:wght@100..400&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  --background: #010101;
+  --foreground: #ffff;
+  --nav-item-color: #a9a9a9;
+  --nav-item-hover-color: #ffff;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --primary-font: "Figtree", sans-serif;
+  --urbanist-font: "Urbanist", sans-serif;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --special-color: #00e7f9;
+  --special-color-2: #10cbe0;
+  --special-color-3: #fc004e;
 }
-
+* {
+  font-family: var(--primary-font);
+  box-sizing: border-box;
+}
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--primary-font);
+}
+
+/* reusable classes */
+.cs-container {
+  width: 100%;
+  max-width: 1030px;
+  padding: 0px 12px;
+  margin: 0 auto;
+}
+.top-nav-gradient {
+  background: linear-gradient(to right, var(--special-color-3), #10cbe0);
+}
+
+.nav-item {
+  color: var(--nav-item-color);
+  transition: 200ms;
+}
+.nav-item:hover {
+  color: var(--nav-item-hover-color);
+}
+.hero-highlight-text {
+  color: var(--special-color);
+  text-shadow: 0 4px 4px var(--special-color-3);
+}
+.font-urbanist {
+  font-family: var(--urbanist-font);
+  letter-spacing: 0%;
+  vertical-align: middle;
+}
+
+.hero-list-style {
+  font-family: var(--primary-font);
+  line-height: 22px;
+  letter-spacing: 0%;
+  vertical-align: middle;
 }
