@@ -40,7 +40,7 @@ const Hero = () => {
                 </p>
               </div>
               <div className="md:mt-0 text-center mx-auto sm:mx-0 w-full sm:text-left max-w-[300px] lg:max-w-full mt-[22px] text-[#ABABAB] font-medium hero-footer-style flex flex-col gap-[12px]">
-                <p className="text-[12px] max-w-[95%] sm:max-w-full">
+                <p className="text-[12px] max-w-[95%] sm:max-w-full lg:max-w-[95%]">
                   By clicking <Link href={"/"}>{`"Get Started"`}</Link>, you
                   agree with Terms and Conditions, Privacy Policy, Subscription
                   Terms
