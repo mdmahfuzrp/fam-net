@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="cs-container w-full relative">
         <div className="w-full flex  flex-col-reverse md:flex-row items-start">
           {/* left section */}
-          <div className="w-full md:max-w-[540px] mt-[-10px] md:!pt-[57px]">
+          <div className="w-full md:max-w-[540px] mt-[10px] md:!pt-[57px]">
             <p className="text-[25px] md:text-[35px] inline-block text-center sm:text-left leading-[27px] md:leading-[40px] font-bold font-urbanist">
               Want to Turn Social Media Into a Profitable Career?
             </p>
@@ -53,7 +53,7 @@ const Hero = () => {
             </div>
           </div>
           {/* right section */}
-          <div className="px-5 sm:px-0 lg:w-1/2">
+          <div className="px-5 sm:px-0 lg:w-1/2 min-h-[320px]">
             <Image
               src={heroImg}
               alt="hero image fame tonic"
